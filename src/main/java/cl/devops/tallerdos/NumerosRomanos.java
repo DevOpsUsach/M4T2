@@ -3,15 +3,17 @@ package cl.devops.tallerdos;
 public class NumerosRomanos {
     public static String numToRomano(int numero) {
         String resultado;
+        int unidadmil;
         int centena;
         int decena;
         int unidad;
 
+        unidadmil = (numero / 1000) % 10;
         centena = (numero / 100) % 10;
         decena = (numero / 10) % 10;
         unidad = numero % 10;
 
-        resultado = getCentena(centena) + getDecena(decena) + getUnidad(unidad);
+        resultado = getUnidadMil(unidadmil) + getCentena(centena) + getDecena(decena) + getUnidad(unidad);
 
         return resultado;
     }
@@ -57,6 +59,13 @@ public class NumerosRomanos {
             case 7 -> "DCC";
             case 8 -> "DCCC";
             case 9 -> "CM";
+            default -> "";
+        };
+    }
+
+    private static String getUnidadMil(int numero) {
+        return switch (numero) {
+            case 1 -> "M";
             default -> "";
         };
     }

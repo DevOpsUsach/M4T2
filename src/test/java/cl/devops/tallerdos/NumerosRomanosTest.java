@@ -33,5 +33,7 @@ public class NumerosRomanosTest {
         assertEquals("CDLIX", NumerosRomanos.numToRomano(459));
         assertEquals("DCCXLIX", NumerosRomanos.numToRomano(749));
         assertEquals("CMXCIX", NumerosRomanos.numToRomano(999));
+
+        assertEquals("M", NumerosRomanos.numToRomano(1000));
     }
 }

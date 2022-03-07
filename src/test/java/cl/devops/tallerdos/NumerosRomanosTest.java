@@ -18,7 +18,6 @@ public class NumerosRomanosTest {
         assertEquals("IX", NumerosRomanos.numToRomano(9));
 
         assertEquals("X", NumerosRomanos.numToRomano(10));
-        assertEquals("XI", NumerosRomanos.numToRomano(11));
         assertEquals("XII", NumerosRomanos.numToRomano(12));
         assertEquals("XIV", NumerosRomanos.numToRomano(14));
         assertEquals("XV", NumerosRomanos.numToRomano(15));
@@ -27,5 +26,12 @@ public class NumerosRomanosTest {
         assertEquals("LXXIX", NumerosRomanos.numToRomano(79));
         assertEquals("XCIX", NumerosRomanos.numToRomano(99));
 
+        assertEquals("C", NumerosRomanos.numToRomano(100));
+        assertEquals("CII", NumerosRomanos.numToRomano(102));
+        assertEquals("CXIV", NumerosRomanos.numToRomano(114));
+        assertEquals("CLIX", NumerosRomanos.numToRomano(159));
+        assertEquals("CDLIX", NumerosRomanos.numToRomano(459));
+        assertEquals("DCCXLIX", NumerosRomanos.numToRomano(749));
+        assertEquals("CMXCIX", NumerosRomanos.numToRomano(999));
     }
 }

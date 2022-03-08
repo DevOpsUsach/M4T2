@@ -7,6 +7,10 @@ public class NumerosRomanos {
         int centena;
         int decena;
         int unidad;
+        
+        if (numero <= 0) {
+            return "No definido";
+        }
 
         unidadmil = (numero / 1000) % 10;
         centena = (numero / 100) % 10;

@@ -14,6 +14,12 @@ Integrantes Grupo 3:
 Ejecutar Test:
 --------------
 
-```bash
-gradle test
+## Windows
+```
+./gradlew.bat clean test -e
+```
+
+## Linux y macOS
+```
+./gradlew clean test -e
 ```

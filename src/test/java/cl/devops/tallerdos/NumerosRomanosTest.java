@@ -7,6 +7,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class NumerosRomanosTest {
     @Test
     void test() {
+        
+        assertEquals("No definido", NumerosRomanos.numToRomano(-1));
+        
+        assertEquals("No definido", NumerosRomanos.numToRomano(0));
+        
         assertEquals("I", NumerosRomanos.numToRomano(1));
         assertEquals("II", NumerosRomanos.numToRomano(2));
         assertEquals("III", NumerosRomanos.numToRomano(3));
